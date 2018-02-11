@@ -1,6 +1,6 @@
 {
   "name": "geojson2ndjson",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert a GeoJSON file into newline-delimited JSON output, one line per feature.",
   "main": "index.js",
   "author": "Steve Bennett <me@stevebennett.me> (http://stevebennett.me)",
