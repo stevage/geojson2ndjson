@@ -10,6 +10,6 @@
     "yargs": "^11.0.0"
   },
   "bin": {
-    "geojson2ndjson": "index.js"
+    "geojson2ndjson": "./index.js"
   }
 }
