@@ -9,6 +9,14 @@ npm install -g geojson2ndjson
 geojson2ndjson myfile.geojson | ...
 ```
 
+Or read from standard input:
+
+```
+cat myfile.geojson | geojson2ndjson | ...
+```
+
+
+
 ### Examples
 
 List the properties of every feature, without the geometries:
