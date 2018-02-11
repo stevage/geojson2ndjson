@@ -11,5 +11,8 @@
   },
   "bin": {
     "geojson2ndjson": "./index.js"
+  }, "repository": {
+    "type": "git",
+    "url": "https://github.com/stevage/geojson2ndjson"
   }
 }
