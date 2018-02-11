@@ -5,7 +5,7 @@ Converts a GeoJSON file on disk into a newline-delimited output, following the [
 ### Usage
 
 ```
-npm install geojson2ndjson
+npm install -g geojson2ndjson
 geojson2ndjson myfile.geojson | ...
 ```
 
