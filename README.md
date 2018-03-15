@@ -15,7 +15,22 @@ Or read from standard input:
 cat myfile.geojson | geojson2ndjson | ...
 ```
 
+## ndjson2geojson
 
+Converts a line-delimited GeoJSON file on disk into regular GeoJSON output, with no validation.
+
+### Usage
+
+```
+npm install -g geojson2ndjson
+ndjson2geojson myfile.json | ...
+```
+
+Or read from standard input:
+
+```
+cat myfile.json | ndjson2geojson | ...
+```
 
 ### Examples
 
@@ -23,4 +38,10 @@ List the properties of every feature, without the geometries:
 
 ```
 geojson2ndjson myfile.geojson | ndjson-map d.properties
+```
+
+Remove every property except "name" from a GeoJSON file:
+
+```
+geojson2ndjson myfile.geojson | ndjson-map 'd.properties = {name: d.properties.name}, d' | ndjson2geojson > myfile-out.geojson
 ```

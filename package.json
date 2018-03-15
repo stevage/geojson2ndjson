@@ -1,16 +1,18 @@
 {
   "name": "geojson2ndjson",
   "version": "0.2.0",
-  "description": "Convert a GeoJSON file into newline-delimited JSON output, one line per feature.",
+  "description": "Convert a GeoJSON file into newline-delimited JSON output, one line per feature, and the reverse.",
   "main": "index.js",
   "author": "Steve Bennett <me@stevebennett.me> (http://stevebennett.me)",
   "license": "Apache-2.0",
   "dependencies": {
     "JSONStream": "^1.3.2",
+    "line-input-stream": "^1.0.1",
     "yargs": "^11.0.0"
   },
   "bin": {
-    "geojson2ndjson": "./index.js"
+    "geojson2ndjson": "./geojson2ndjson.js",
+    "ndjson2geojson": "./ndjson2geojson.js"
   },
   "repository": {
     "type": "git",
