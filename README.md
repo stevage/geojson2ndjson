@@ -15,6 +15,12 @@ Or read from standard input:
 cat myfile.geojson | geojson2ndjson | ...
 ```
 
+Or multiple files:
+
+```
+geojson2ndjson *.geojson > everything.nd.json
+```
+
 ## ndjson2geojson
 
 Converts a line-delimited GeoJSON file on disk into regular GeoJSON output, with no validation.
